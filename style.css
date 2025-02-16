@@ -3,7 +3,17 @@ body { font-family: 'Oswald', sans-serif; margin: 0; padding: 0; text-align: cen
         h1 {
             font-size: 2.5em; /* Aumenta el tamaño de los encabezados h1 */
         }
-        nav { background-color: #ffffff; padding: 15px; }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white; /* Ajusta según el diseño */
+            z-index: 1000; /* Para que quede por encima del resto del contenido */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opcional, para dar un efecto de sombra */
+            padding: 10px 0; /* Ajustar el espaciado si es necesario */
+        }
+        
         .nav-container {
             display: flex;
             align-items: center;
@@ -42,7 +52,157 @@ body { font-family: 'Oswald', sans-serif; margin: 0; padding: 0; text-align: cen
         .hist-text { max-width: 800px; text-align: center; padding: 20px; }
         .hist-img { max-width: 100%; width: 1000px; }
         
+
+        .comidas {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #ccc;
+        }
         
+        .comidas h1 {
+            font-size: 2.5em;
+            color: #259BDB;
+            font-family: 'Kalam', cursive;
+        }
+        
+        .comida-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        
+        .comida-item {
+            max-width: 425px;
+        }
+        
+        .comida-item img {
+            width: 450px;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .comida-item h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        
+        .menu-btn {
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: 2px solid black;
+            background: white;
+            color: black;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .menu-btn:hover {
+            background: #259BDB;
+            color: white;
+        }
+        
+        
+        .pollos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 20px;
+        }
+        
+        .pollos-text {
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .pollos h2 {
+            font-size: 2em;
+            color: #259BDB;
+            font-family: 'Kalam', cursive;
+        }
+        
+        .pollos h3 {
+            font-size: 1.5em;
+            color: #259BDB;
+            font-style: italic;
+        }
+        
+        .pollos p {
+            font-size: 1em;
+        }
+        
+        .pollos img {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .pet-friendly {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            border-top: 1px solid #ccc;
+        }
+        
+        .pet-content {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 900px;
+            text-align: justify;
+        }
+        
+        .pet-img {
+            max-width: 300px;
+            width: 100%;
+            margin-right: 20px;
+        }
+        
+        .pet-text {
+            flex: 1;
+        }
+        
+        .pet-text h2 {
+            font-family: 'Kalam', cursive;
+            color: #259BDB;
+            font-size: 2em;
+        }
+        
+        .pet-text p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+        
+        .horarios {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        
+        .horarios h2 {
+            font-family: 'Kalam', cursive;
+            font-size: 2em;
+            color: #2196F3;
+        }
+        
+        .horarios p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        
+        .horarios strong {
+            font-weight: bold;
+        }
+        
+
         footer {
             text-align: center;
             padding: 20px;
@@ -79,4 +239,4 @@ body { font-family: 'Oswald', sans-serif; margin: 0; padding: 0; text-align: cen
             height: 40px;
             margin: 5px;
         }
-        
+
