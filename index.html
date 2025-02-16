@@ -2,33 +2,60 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Casa Yanes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Importación de las fuentes de Google -->
+    <title>Casa Yanes - Inicio</title>
+    <link rel="icon" type="image/png" href="images/CasaYanes_rgb_color_simbolo.png">
     <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Oswald&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Casa Yanes</h1>
-    </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sugerencias.html">Sugerencias</a></li>
-            <li><a href="nuestra_historia.html">Nuestra Historia</a></li>
-        </ul>
+        <div class="nav-container">
+            <img src="images/CasaYanes_rgb_color_simbolo.png" alt="Casa Yanes Logo" class="logo">
+            <div class="nav-links">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="historia.html">Nuestra Historia</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </div>
+        </div>
     </nav>
-    <section id="contenido-principal">
-        <h2>Bienvenidos a Casa Yanes</h2>
-        <p>Disfruta de nuestra deliciosa comida casera y ambiente acogedor.</p>
+    
+    <div class="container">
+        <img src="images/CasaYanes_rgb_color_vertical.png" alt="Casa Yanes Logo" class="logo">
+    </div>
+    <section class="about-section">
+        <div class="about-text">
+            <h1>SOBRE NOSOTROS</h1>
+            <p>Abrimos <i>Casa Yanes</i> en La Zamora el día 14 de julio de 2008 con mucha ilusión por sacarle una sonrisa a todo aquel que probase nuestros platos. Somos una empresa pequeña, pero con mucho entusiasmo, siempre ponemos el corazón en todo lo que hacemos, de ahí el sabor de nuestras comidas.</p>
+            <p>Así que te recomendamos que cuando nos visites pidas algunas servilletas de más porque se te puede caer la baba.</p>
+            <div class="social-icons">
+                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/instagram.png" alt="Instagram">
+                <img src="images/tiktok.png" alt="TikTok">
+            </div>
+            <div class="about-img">
+                <img src="images/fachada2_retocada_comprimida.png" alt="Fachada Casa Yanes" class="about-img">
+                <p><i>Nuestra terraza es pet friendly.</i></p>
+            </div>
+            
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3510.095612121159!2d-16.56679!3d28.38618!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a8076e43eadc5%3A0xff1f3acb68966e65!2sC.%20la%20Zamora%2C%20117%2C%2038419%20Los%20Realejos%2C%20Santa%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1739719909308!5m2!1ses!2ses" width="400" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <footer>
-        <p>Contacto: info@casayanes.com | Teléfono: 922 34 60 75</p>
-        <p>Dirección: Carretera General La Zamora, 117</p>
-        <p>&copy; 2025 por Casa Yanes.</p>
-    </footer>
 </body>
+
+<footer>
+    <div class="footer-container">
+        <p><a href="mailto:info@casayanes.com">info@casayanes.com</a></p>
+        <p>922 34 60 75</p>
+        <p>Carretera General La Zamora, 117</p>
+        <p><a href="#">Textos legales (política de cookies, aviso legar y política de privacidad)</a> </p>
+        <p>©2025 por Casa Yanes.</p>
+        <div class="social-icons">
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+        </div>
+    </div>
+</footer>
+
 </html>
