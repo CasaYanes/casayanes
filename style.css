@@ -1,0 +1,82 @@
+body { font-family: 'Oswald', sans-serif; margin: 0; padding: 0; text-align: center; }
+        h1, h2, h3, a { font-family: 'Kalam', cursive; color: #259BDB; }
+        h1 {
+            font-size: 2.5em; /* Aumenta el tamaño de los encabezados h1 */
+        }
+        nav { background-color: #ffffff; padding: 15px; }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;}
+        /* Estilos generales para los enlaces de navegación */
+        .nav-links a:link,
+        .nav-links a:visited {
+            color: #3e3e3d;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Estilo para el enlace activo */
+        .nav-links a.active {
+            color: #259bdb;
+        }
+
+        /* Estilo al pasar el cursor por encima del enlace */
+        .nav-links a:hover {
+            color: #259bdb;
+        }
+        nav img.logo {
+            width: 50px;
+            margin-left: 50px;
+        }
+        .container { padding: 20px; }
+        .logo { width: 300px; }
+        .about-section { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 20px; gap: 50px;}
+        .about-text { max-width: 500px; text-align: center; padding: 20px; }
+        .about-img { max-width: 100%; width: 500px; }
+        .social-icons img { width: 40px; height: 40px; margin: 5px; }
+
+        .hist-container { padding: 20px; }
+        .hist-section { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 20px; gap: 50px;}
+        .hist-text { max-width: 800px; text-align: center; padding: 20px; }
+        .hist-img { max-width: 100%; width: 1000px; }
+        
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #259BDB;
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .footer-container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .footer-container p {
+            margin: 5px 0;
+            color: #000;
+        }
+        
+        .footer-container a {
+            color: #259BDB;
+            text-decoration: none;
+        }
+        
+        .footer-container a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-icons {
+            margin-top: 10px;
+        }
+        
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+        }
+        
