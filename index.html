@@ -30,6 +30,11 @@
                 <a href="historia.html">Nuestra Historia</a>
                 <a href="sugerencias.html">Sugerencias</a>
             </div>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
     </nav>
     
@@ -104,7 +109,34 @@
         <p>Cena con nosotros o pide para llevar</p>
         <p><strong>L-J:</strong> 16:00 - 23:00  &nbsp; <strong>V:</strong> 12:00 - 23:00  &nbsp; <strong>S-D:</strong> 10:00 - 22:00</p>
     </div>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    burgerMenu.addEventListener('click', function(event) {
+        event.stopPropagation();
+        navLinks.classList.toggle('active');
+        burgerMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.nav-container')) {
+            navLinks.classList.remove('active');
+            burgerMenu.classList.remove('active');
+        }
+    });
+
+    // Close menu when clicking on a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            burgerMenu.classList.remove('active');
+        });
+    });
+});
+    </script>
 </body>
 
 
