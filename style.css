@@ -576,3 +576,44 @@ footer {
         margin-bottom: 0;
     }
 }
+
+
+/* ===== Sección de contacto ===== */
+.contacto-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 40px auto 60px;
+    padding: 0 20px;
+}
+.contacto-item {
+    flex: 1 1 280px;
+    background-color: #f4f9fc;
+    border-radius: 8px;
+    padding: 25px 20px;
+    text-align: center;
+}
+.contacto-item h3 {
+    margin-top: 0;
+    color: #259BDB;
+}
+.contacto-item p {
+    font-family: 'Oswald', sans-serif;
+    color: #3e3e3d;
+    margin: 8px 0 0;
+    line-height: 1.5;
+}
+.contacto-item a {
+    font-family: 'Oswald', sans-serif;
+    color: #259BDB;
+    text-decoration: none;
+}
+.contacto-item a:hover {
+    text-decoration: underline;
+}
+.contacto-item .social-icons {
+    justify-content: center;
+    margin-top: 10px;
+}
